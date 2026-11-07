@@ -28,6 +28,8 @@
 		<link href="css/responsive.css" rel="stylesheet">				 <!-- Remove this For Non-responsive -->	
 		<!-- width/height attributes reserve image space; keep sized images proportional -->
 		<style>:where(img[height]){height:auto}</style>
+		<!-- superslides sets #slides to the window height from JS; reserve it before the scripts run so the arrows and header do not jump (CLS) -->
+		<style>#slides{overflow:hidden;height:100vh;height:100svh}</style>
 		<!-- <link href="css/non-responsive.css" rel="stylesheet"> -->		 <!-- Add this For Non-responsive -->	
 		
 		<!-- Google fonts -->
