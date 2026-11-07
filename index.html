@@ -11,6 +11,7 @@
 		<!-- favicon -->
 		<link rel="shortcut icon" href="img/favicon.png">
 		
+		<link rel="preload" as="image" href="img/custom/costarica_banner_1920x1080_cool.webp" fetchpriority="high">
 		<!-- Style sheets -->
 		<link href="css/crispy.css" rel="stylesheet">
 		<link href="css/ionicons.min.css" rel="stylesheet">
@@ -25,10 +26,14 @@
 		<link href="css/style.css" rel="stylesheet">			
 		<!-- <link href="css/colors/color-3.css" rel="stylesheet"> add css for different color schemes "color-1 to 6"  -->
 		<link href="css/responsive.css" rel="stylesheet">				 <!-- Remove this For Non-responsive -->	
+		<!-- width/height attributes reserve image space; keep sized images proportional -->
+		<style>:where(img[height]){height:auto}</style>
 		<!-- <link href="css/non-responsive.css" rel="stylesheet"> -->		 <!-- Add this For Non-responsive -->	
 		
 		<!-- Google fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300%7CMontserrat' rel='stylesheet' type='text/css'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,300%7CMontserrat&display=swap" rel='stylesheet' type='text/css'>
 		
 	</head>
 	<body>
@@ -63,10 +68,10 @@
 			</div>
 			<div class="Slides-nav-control">
 				<nav class="slides-navigation">
-					<a href="#" class="next right-arrow"><img src="img/right-arrow.png" alt="next" /></a>
-					<a href="#" class="prev left-arrow"><img src="img/left-arrow.png" alt="prev" /></a>				
+					<a href="#" class="next right-arrow"><img src="img/right-arrow.webp" alt="next" width="150" height="150" decoding="async" /></a>
+					<a href="#" class="prev left-arrow"><img src="img/left-arrow.webp" alt="prev" width="150" height="150" decoding="async" /></a>				
 				</nav>
-				<div class="down-arrow page-scroll"><a href="#about"><img src="img/down-arrow.png" alt="Go ahead" /></a> </div>
+				<div class="down-arrow page-scroll"><a href="#about"><img src="img/down-arrow.webp" alt="Go ahead" width="150" height="150" decoding="async" /></a> </div>
 			</div>			
 		</div>
 		
@@ -141,7 +146,7 @@
 							</div>
 						</div>
 						<div class="col-md-8 margin-top-70 margin-bottom-100">
-							<img src="img/custom/all_around_woman.png" alt="mockup">
+							<img src="img/custom/all_around_woman.webp" alt="mockup" width="1200" height="820" loading="lazy" decoding="async">
 						</div>
 					</div>
 				</div>
@@ -162,10 +167,10 @@
 							<div class="fancy-line"></div>
 						</div>
 						<div class="row">
-							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-1.png"><h4>STRENGTH</h4><p>It comes from within, practicing yoga helps us tap into that inner power & find balance & peace.</p></div>
-							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-2.png"><h4>INTEGRITY</h4><p>Set your intentions on peace, serenity, and integrity. Align your life with goodness for all.</p></div>
-							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-4.png"><h4>LOVE</h4><p>We show compassion for what we do in a powerful mix that brings fulfillment & satisfaction within.</p></div>
-							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-3.png"><h4>KNOWLEDGE</h4><p>Be aware of surroundings and diversify skills. Absorb ancient wisdom & latest innovations.</p></div>
+							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-1.webp" width="250" height="250" loading="lazy" decoding="async"><h4>STRENGTH</h4><p>It comes from within, practicing yoga helps us tap into that inner power & find balance & peace.</p></div>
+							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-2.webp" width="250" height="250" loading="lazy" decoding="async"><h4>INTEGRITY</h4><p>Set your intentions on peace, serenity, and integrity. Align your life with goodness for all.</p></div>
+							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-4.webp" width="250" height="250" loading="lazy" decoding="async"><h4>LOVE</h4><p>We show compassion for what we do in a powerful mix that brings fulfillment & satisfaction within.</p></div>
+							<div class="col-sm-3 col-md-3 margin-30"><img src="img/custom/featured-icon-3.webp" width="250" height="250" loading="lazy" decoding="async"><h4>KNOWLEDGE</h4><p>Be aware of surroundings and diversify skills. Absorb ancient wisdom & latest innovations.</p></div>
 						</div>
 					</div>
 				</div>
@@ -234,7 +239,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="img/custom/silkgear.webp" alt="mockup">
+						<img src="img/custom/silkgear.webp" alt="mockup" width="1200" height="1160" loading="lazy" decoding="async">
 					</div>
 					<div class="col-md-12 margin-bottom-100">
 						<div class="row">
@@ -361,7 +366,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/yogashoot1200x800.webp" alt="yoga" />
+								<img src="img/custom/yogashoot1200x800.webp" alt="yoga" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-1.html">Yoga</a></h4>
@@ -378,7 +383,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/yogarun1200x800.webp" alt="yoga" />
+								<img src="img/custom/yogarun1200x800.webp" alt="yoga" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-3.html">Yoga</a></h4>
@@ -395,7 +400,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/artclass1200x800.webp" alt="thumbnail" />
+								<img src="img/custom/artclass1200x800.webp" alt="thumbnail" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-2.html">Arts</a></h4>
@@ -412,7 +417,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/waterflower1200x800.webp" alt="thumbnail" />
+								<img src="img/custom/waterflower1200x800.webp" alt="thumbnail" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-1.html">Arts</a></h4>
@@ -429,7 +434,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/kitchentalk1200x800.webp" alt="thumbnail" />
+								<img src="img/custom/kitchentalk1200x800.webp" alt="thumbnail" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-4.html">Cafe</a></h4>
@@ -447,7 +452,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/sailkid1200x800.webp" alt="thumbnail" />
+								<img src="img/custom/sailkid1200x800.webp" alt="thumbnail" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a href="portfolio-single-5.html" target="_blank">Home</a></h4>
@@ -463,7 +468,7 @@
 					<div id="post-18" class="white portfolio-post all home col-sm-6 col-md-3 portfolio-thumbnail no-margin-padding" >
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/flowerhappy1200x800.webp" alt="community" />
+								<img src="img/custom/flowerhappy1200x800.webp" alt="community" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-1.html">Home</a></h4>
@@ -480,7 +485,7 @@
 						
 						<div class="portfolio-thumbnail-container">
 							<div class="thumbnail-image">
-								<img src="img/custom/fashionsession1200x800.webp" alt="futurism" />
+								<img src="img/custom/fashionsession1200x800.webp" alt="futurism" width="960" height="640" loading="lazy" decoding="async" />
 							</div>
 							<div class="portfolio-thumbnail-content">
 								<h4><a class="portfolio-read-more" href="#" data-single_url="portfolio-single-1.html">Tech</a></h4>
@@ -518,28 +523,28 @@
 					<div class="col-md-12 columns margin-top-30 margin-bottom-70">
 						<div id="carousel-clients" class="carousel-container">
 							<div>
-								<img src="img/logo-1.png" alt="client_logo" />
+								<img src="img/logo-1.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-2.png" alt="client_logo" />
+								<img src="img/logo-2.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-3.png" alt="client_logo" />
+								<img src="img/logo-3.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-4.png" alt="client_logo" />
+								<img src="img/logo-4.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-5.png" alt="client_logo" />
+								<img src="img/logo-5.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-6.png" alt="client_logo" />
+								<img src="img/logo-6.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-1.png" alt="client_logo" />
+								<img src="img/logo-1.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							<div>
-								<img src="img/logo-2.png" alt="client_logo" />
+								<img src="img/logo-2.webp" alt="client_logo" width="400" height="200" decoding="async" />
 							</div>
 							
 						</div>
@@ -560,12 +565,12 @@
 									<p class="text-left" > - Aini Pirzada</p>
 								</div>
 								<div class="col-md-8 margin-bottom-100">
-									<img src="img/custom/two_women2.webp" alt="mockup"/>
+									<img src="img/custom/two_women2.webp" alt="mockup" width="1200" height="800" decoding="async" />
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-8 margin-bottom-100">
-									<img src="img/custom/whoweare3.webp" alt="mockup"/>
+									<img src="img/custom/whoweare3.webp" alt="mockup" width="1200" height="800" decoding="async" />
 								</div>
 								<div class="col-md-4 margin-70">
 									<p>As the VP of SILK, I am thrilled to offer an incredible opportunity for like-minded individuals to join us in our mission to create a peaceful community that empowers the well-being of all.</p><p>  We believe that by working together, we can create a world where everyone feels empowered to live their best life. By joining our franchise family, you will have the opportunity to help us bring this mission to more people around the world. We invite you to join us on this journey and become a part of the SILK community. Together, we can make a positive impact on the world and create a brighter future for generations to come. </p>
@@ -601,7 +606,7 @@
 						<div id="carousel-team" class="row carousel-container">							
 							<div class="col-sm-6 col-md-3  margin-bottom-50">
 								<div class="member-image-container">
-									<div class="member-image"><img src="img/custom/carly.webp" alt="member 1" /></div>
+									<div class="member-image"><img src="img/custom/carly.webp" alt="member 1" width="400" height="400" decoding="async" /></div>
 									<div class="member-text-content">
 										<div class="member-text white">
 											<h4>Carly</h4>
@@ -618,7 +623,7 @@
 							</div>
 							<div class="col-sm-6 col-md-3 margin-bottom-50">
 								<div class="member-image-container">
-									<div class="member-image"><img src="img/custom/hira.webp" alt="member 1" /></div>
+									<div class="member-image"><img src="img/custom/hira.webp" alt="member 1" width="400" height="400" decoding="async" /></div>
 									<div class="member-text-content">
 										<div class="member-text white">
 											<h4>Lily</h4>
@@ -635,7 +640,7 @@
 							</div>
 							<div class="col-sm-6 col-md-3 margin-bottom-50">
 								<div class="member-image-container">
-									<div class="member-image"><img src="img/custom/aini.webp" alt="member 1" /></div>
+									<div class="member-image"><img src="img/custom/aini.webp" alt="member 1" width="400" height="400" decoding="async" /></div>
 									<div class="member-text-content">
 										<div class="member-text white">
 											<h4>Hira</h4>
@@ -652,7 +657,7 @@
 							</div>
 							<div class="col-sm-6 col-md-3 margin-bottom-50">
 								<div class="member-image-container">
-									<div class="member-image"><img src="img/custom/phillis.webp" alt="member 1" /></div>
+									<div class="member-image"><img src="img/custom/phillis.webp" alt="member 1" width="400" height="400" decoding="async" /></div>
 									<div class="member-text-content">
 										<div class="member-text white">
 											<h4>Phillis</h4>
@@ -682,12 +687,12 @@
 						<div id="carousel-testimonials" class="carousel-container">
 							<div class="row">
 								<div class="col-sm-2 col-md-2">
-									<img src="img/custom/jess.webp" alt="quote" />
+									<img src="img/custom/jess.webp" alt="quote" width="340" height="400" decoding="async" />
 								</div>
 								<div class="col-sm-9 col-md-9">								
 									<div class="testimonial-quote">
 										<div class="quote-symbol">
-											<img src="img/quote.png"  alt="symbol_quote" /> <!-- <i class="fa fa-quote-left"></i> -->
+											<img src="img/quote.webp"  alt="symbol_quote" width="60" height="40" decoding="async" /> <!-- <i class="fa fa-quote-left"></i> -->
 										</div>
 										<h3>WE HAVE WORKED WITH MANY CONSULTANTS, BUT SILK CORP IS TRULY ONE OF A KIND. THANK YOU FOR EVERYTHING!</h3>
 										<p class="quote-cite"> - Ayesha Abadi</p>
@@ -696,12 +701,12 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-2 col-md-2">
-									<img src="img/custom/brit.webp" alt="quote" />
+									<img src="img/custom/brit.webp" alt="quote" width="340" height="400" decoding="async" />
 								</div>
 								<div class="col-sm-9 col-md-9">								
 									<div class="testimonial-quote">
 										<div class="quote-symbol">
-											<img src="img/quote.png"  alt="symbol_quote" /> <!-- <i class="fa fa-quote-left"></i> -->
+											<img src="img/quote.webp"  alt="symbol_quote" width="60" height="40" decoding="async" /> <!-- <i class="fa fa-quote-left"></i> -->
 										</div>
 										<h3>WE ARE SO GRATEFUL TO HAVE SILK CORP AS OUR PARTNER. THEIR EXPERTISE IS INVALUABLE! SILK CORP HAS TRULY TRANSFORMED OUR BUSINESS.</h3>
 										<p class="quote-cite"> - Makena Guillaume</p>
@@ -710,12 +715,12 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-2 col-md-2">
-									<img src="img/custom/chinatestimonial2.webp" alt="quote" />
+									<img src="img/custom/chinatestimonial2.webp" alt="quote" width="340" height="400" decoding="async" />
 								</div>
 								<div class="col-sm-9 col-md-9">								
 									<div class="testimonial-quote">
 										<div class="quote-symbol">
-											<img src="img/quote.png"  alt="symbol_quote" /> <!-- <i class="fa fa-quote-left"></i> -->
+											<img src="img/quote.webp"  alt="symbol_quote" width="60" height="40" decoding="async" /> <!-- <i class="fa fa-quote-left"></i> -->
 										</div>
 										<h3>THE SILK CORP TEAM IS TRULY AMAZING! THEIR CREATIVE THINKING AND COLLABORATION SKILLS ARE UNMATCHED. THANK YOU FOR EVERYTHING!</h3>
 										<p class="quote-cite"> - Nhi Thach</p>
@@ -876,8 +881,6 @@
 		<script src="js/jquery.mb.YTPlayer.js"></script>
 		<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
 		<script src="js/script.js"></script>
-		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<script src="js/ytb-playlist.js"> </script>
 	</body>
 </html>
